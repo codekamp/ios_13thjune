@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75C249B51D1947E600E87359 /* SongDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C249B41D1947E600E87359 /* SongDetailViewController.swift */; };
+		75C249B71D19565D00E87359 /* SongGenreSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C249B61D19565D00E87359 /* SongGenreSelectViewController.swift */; };
 		75C783611D13FD9F0031CD5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C783601D13FD9F0031CD5E /* AppDelegate.swift */; };
 		75C783631D13FD9F0031CD5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C783621D13FD9F0031CD5E /* ViewController.swift */; };
 		75C783661D13FD9F0031CD5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75C783641D13FD9F0031CD5E /* Main.storyboard */; };
@@ -35,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		75C249B41D1947E600E87359 /* SongDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongDetailViewController.swift; sourceTree = "<group>"; };
+		75C249B61D19565D00E87359 /* SongGenreSelectViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongGenreSelectViewController.swift; sourceTree = "<group>"; };
 		75C7835D1D13FD9F0031CD5E /* TableViewAbes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewAbes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C783601D13FD9F0031CD5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75C783621D13FD9F0031CD5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +110,8 @@
 				75C783691D13FD9F0031CD5E /* LaunchScreen.storyboard */,
 				75C7836C1D13FD9F0031CD5E /* Info.plist */,
 				75C7838E1D1400DB0031CD5E /* Song.swift */,
+				75C249B41D1947E600E87359 /* SongDetailViewController.swift */,
+				75C249B61D19565D00E87359 /* SongGenreSelectViewController.swift */,
 			);
 			path = TableViewAbes;
 			sourceTree = "<group>";
@@ -261,7 +267,9 @@
 			files = (
 				75C783631D13FD9F0031CD5E /* ViewController.swift in Sources */,
 				75C7838F1D1400DB0031CD5E /* Song.swift in Sources */,
+				75C249B51D1947E600E87359 /* SongDetailViewController.swift in Sources */,
 				75C783611D13FD9F0031CD5E /* AppDelegate.swift in Sources */,
+				75C249B71D19565D00E87359 /* SongGenreSelectViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +496,7 @@
 				75C783871D13FDA00031CD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75C783881D13FDA00031CD5E /* Build configuration list for PBXNativeTarget "TableViewAbesTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +505,7 @@
 				75C7838A1D13FDA00031CD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75C7838B1D13FDA00031CD5E /* Build configuration list for PBXNativeTarget "TableViewAbesUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +514,7 @@
 				75C7838D1D13FDA00031CD5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
