@@ -19,19 +19,17 @@ class ViewController: UIViewController, UITableViewDataSource {
         self.tableView.dataSource = self
         
         
-        let a = {
-            (incomingLists:[List]) in
-            
-            self.lists = incomingLists
-            self.tableView.reloadData()
-        }
-        
-        
-        MailChimpService.fetchLists{
+        MailChimpService.fetchLists({
             incomingLists in
             
             self.lists = incomingLists
             self.tableView.reloadData()
+        }) {
+            error in
+            
+            print(error.message)
+            print(error.statusCode)
+            print(error.code)
         }
         
         print("we have moved ahead")

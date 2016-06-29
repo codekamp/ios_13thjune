@@ -7,7 +7,17 @@
 //
 
 import Foundation
+import SwiftyJSON
 
 class Contact {
     
+    let id:String
+    let name:String
+    let email:String
+    
+    init(json:JSON) {
+        self.id = json["id"].string!
+        self.name = json["merges"]["FNAME"].string! + " " + json["merges"]["LNAME"].string!
+        self.email = json["email"].string!
+    }
 }

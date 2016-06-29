@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		27BC9C08AA268C60406A3D3F /* Pods_NetworkConectivityDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0008072594697A24A4BD2E25 /* Pods_NetworkConectivityDemo.framework */; };
+		7549F6221D23DBB100EC3BDD /* CodeKampError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7549F6211D23DBB100EC3BDD /* CodeKampError.swift */; };
 		7586C0B81D2284370002FFFB /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586C0B71D2284370002FFFB /* List.swift */; };
 		7586C0BA1D2284420002FFFB /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586C0B91D2284420002FFFB /* Contact.swift */; };
 		7586C0BC1D22852F0002FFFB /* MailChimpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7586C0BB1D22852F0002FFFB /* MailChimpService.swift */; };
@@ -41,6 +42,7 @@
 		0008072594697A24A4BD2E25 /* Pods_NetworkConectivityDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NetworkConectivityDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		14C2B69BF7A61307F5E75228 /* Pods-NetworkConectivityDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkConectivityDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkConectivityDemo/Pods-NetworkConectivityDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		54D49BE6AC5D3F3968A2BAE3 /* Pods-NetworkConectivityDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NetworkConectivityDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NetworkConectivityDemo/Pods-NetworkConectivityDemo.release.xcconfig"; sourceTree = "<group>"; };
+		7549F6211D23DBB100EC3BDD /* CodeKampError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeKampError.swift; sourceTree = "<group>"; };
 		7586C0B71D2284370002FFFB /* List.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
 		7586C0B91D2284420002FFFB /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		7586C0BB1D22852F0002FFFB /* MailChimpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MailChimpService.swift; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 				7586C0B71D2284370002FFFB /* List.swift */,
 				7586C0B91D2284420002FFFB /* Contact.swift */,
 				7586C0BB1D22852F0002FFFB /* MailChimpService.swift */,
+				7549F6211D23DBB100EC3BDD /* CodeKampError.swift */,
 			);
 			path = NetworkConectivityDemo;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7549F6221D23DBB100EC3BDD /* CodeKampError.swift in Sources */,
 				7586C0BC1D22852F0002FFFB /* MailChimpService.swift in Sources */,
 				7586C0BA1D2284420002FFFB /* Contact.swift in Sources */,
 				75AD02C51D1D447C00A004E0 /* ViewController.swift in Sources */,

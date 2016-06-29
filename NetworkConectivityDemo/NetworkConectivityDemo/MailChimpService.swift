@@ -13,21 +13,31 @@ import SwiftyJSON
 class MailChimpService {
     
     static let baseUrl = "https://us11.api.mailchimp.com/2.0/";
-    static let apiKey = "0b2c80ade9efd31e118ecb6fa2240205-us11"
+    static let apiKey = "API_KEY_HERE"
     
-    class func fetchLists(completionHandler: [List] -> Void) {
+    class func fetchLists(completionHandler: [List] -> Void, failure:CodeKampError -> Void) {
         
         Alamofire.request(.POST, baseUrl + "lists/list?apikey=" + apiKey).responseJSON (completionHandler: { response in
             
             let json = JSON(response.result.value!)
+            
+            
+            
+            
+            //we have placed some check to make sure respose is successful
+            
+            
+            if response.response?.statusCode > 299 || response.response?.statusCode < 200 {
+                
+                failure(CodeKampError(statusCode: response.response!.statusCode, code: json["code"].int!, message: json["error"].string!))
+                return
+            }
             
             var fetchedLists = [List]()
             
             for subJson in json["data"].array! {
                 fetchedLists.append(List(json: subJson))
             }
-            
-            print(fetchedLists.count)
             
             completionHandler(fetchedLists)
             
@@ -43,15 +53,13 @@ class MailChimpService {
             
             let json = JSON(response.result.value!)
             
-            var fetchedLists = [Contact]()
+            var fetchedContacts = [Contact]()
             
             for subJson in json["data"].array! {
-//                fetchedLists.append(Contact(json: subJson))
+                fetchedContacts.append(Contact(json:subJson))
             }
             
-            print(fetchedLists.count)
-            
-            completionHandler(fetchedLists)
+            completionHandler(fetchedContacts)
             
         })
         
