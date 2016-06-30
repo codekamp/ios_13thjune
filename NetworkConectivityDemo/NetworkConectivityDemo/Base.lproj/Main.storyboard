@@ -17,8 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8zV-Gm-NgA">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="112"/>
+                            </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="q09-in-JFE">
-                                <rect key="frame" x="0.0" y="28" width="600" height="572"/>
+                                <rect key="frame" x="0.0" y="120" width="600" height="480"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="simple_cell" textLabel="M9E-99-jSF" style="IBUITableViewCellStyleDefault" id="0P0-bC-T7w">
@@ -43,13 +46,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="q09-in-JFE" firstAttribute="top" secondItem="8zV-Gm-NgA" secondAttribute="bottom" constant="8" symbolic="YES" id="4aU-ad-teK"/>
                             <constraint firstItem="q09-in-JFE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="W2O-zc-hbT"/>
+                            <constraint firstItem="8zV-Gm-NgA" firstAttribute="leading" secondItem="q09-in-JFE" secondAttribute="leading" id="Z2T-CD-XRL"/>
                             <constraint firstAttribute="trailing" secondItem="q09-in-JFE" secondAttribute="trailing" id="dzD-J4-Kr2"/>
-                            <constraint firstItem="q09-in-JFE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="vTb-ft-wzh"/>
+                            <constraint firstItem="8zV-Gm-NgA" firstAttribute="trailing" secondItem="q09-in-JFE" secondAttribute="trailing" id="eca-UV-bnD"/>
+                            <constraint firstItem="8zV-Gm-NgA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="shq-i7-oyB"/>
+                            <constraint firstItem="q09-in-JFE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="vTb-ft-wzh"/>
                             <constraint firstItem="q09-in-JFE" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="w9b-0D-RTe"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageView" destination="8zV-Gm-NgA" id="HDA-aI-wBD"/>
                         <outlet property="tableView" destination="q09-in-JFE" id="sIC-4v-hRV"/>
                     </connections>
                 </viewController>

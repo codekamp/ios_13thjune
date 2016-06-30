@@ -13,7 +13,7 @@ import SwiftyJSON
 class MailChimpService {
     
     static let baseUrl = "https://us11.api.mailchimp.com/2.0/";
-    static let apiKey = "API_KEY_HERE"
+    static let apiKey = "bce3acd01bc77d3ce0c840258b354172-us11"
     
     class func fetchLists(completionHandler: [List] -> Void, failure:CodeKampError -> Void) {
         
@@ -36,6 +36,7 @@ class MailChimpService {
             var fetchedLists = [List]()
             
             for subJson in json["data"].array! {
+                print(subJson["id"])
                 fetchedLists.append(List(json: subJson))
             }
             
@@ -65,6 +66,33 @@ class MailChimpService {
         
         print("fetch list about to complete")
         
+    }
+    
+    class func createContact(listId:String, email:String) {
+        let params:[String:AnyObject] = [
+            "apikey":apiKey,
+            "id":listId,
+            "email":[
+                "email": email
+            ],
+            "double_optin":false
+        ]
+        Alamofire.request(.POST, baseUrl + "lists/subscribe", parameters: params).responseJSON (completionHandler: { response in
+            
+            let json = JSON(response.result.value!)
+            
+            print(json)
+            
+        })
+    }
+    
+    class func fetchImage(url:String, success:UIImage -> Void) {
+        
+        Alamofire.request(.GET, url).responseData { response in
+            
+            let image = UIImage(data: response.result.value!)
+            success(image!)
+        }
     }
     
 }

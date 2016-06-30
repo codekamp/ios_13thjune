@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     var lists = [List]()
     
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +33,11 @@ class ViewController: UIViewController, UITableViewDataSource {
             print(error.code)
         }
         
-        print("we have moved ahead")
+        MailChimpService.fetchImage("https://s.yimg.com/uy/build/images/sohp/photo-stack2.png") { (image) in
+            self.imageView.image = image
+        }
+        
+        imageView.codeKampfunctin()
         
     }
     
