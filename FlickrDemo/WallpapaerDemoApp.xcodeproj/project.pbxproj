@@ -1,0 +1,625 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		754A5D5D1C2A90DA0000E8A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A5D5C1C2A90DA0000E8A0 /* AppDelegate.swift */; };
+		754A5D621C2A90DA0000E8A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754A5D601C2A90DA0000E8A0 /* Main.storyboard */; };
+		754A5D641C2A90DA0000E8A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754A5D631C2A90DA0000E8A0 /* Assets.xcassets */; };
+		754A5D671C2A90DA0000E8A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754A5D651C2A90DA0000E8A0 /* LaunchScreen.storyboard */; };
+		754A5D721C2A90DA0000E8A0 /* WallpapaerDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A5D711C2A90DA0000E8A0 /* WallpapaerDemoAppTests.swift */; };
+		754A5D7D1C2A90DA0000E8A0 /* WallpapaerDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754A5D7C1C2A90DA0000E8A0 /* WallpapaerDemoAppUITests.swift */; };
+		75E2E86C1C2A960D00F8481D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2E86B1C2A960D00F8481D /* Constants.swift */; };
+		75E2E86E1C2A984400F8481D /* WPMenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2E86D1C2A984400F8481D /* WPMenuListViewController.swift */; };
+		75E2E8701C2A9D0400F8481D /* WPFlickrService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2E86F1C2A9D0400F8481D /* WPFlickrService.swift */; };
+		75E2E8721C2A9E5A00F8481D /* WPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2E8711C2A9E5A00F8481D /* WPError.swift */; };
+		75E2E8741C2AA2C600F8481D /* Dictionary+WP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2E8731C2AA2C600F8481D /* Dictionary+WP.swift */; };
+		75E2E8761C2AA64600F8481D /* WPPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2E8751C2AA64600F8481D /* WPPhoto.swift */; };
+		75E2E8781C2AA6FB00F8481D /* UIViewController+WP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2E8771C2AA6FB00F8481D /* UIViewController+WP.swift */; };
+		75E2E87A1C2AB55D00F8481D /* WPPhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2E8791C2AB55D00F8481D /* WPPhotosViewController.swift */; };
+		75E2E87C1C2ABD9200F8481D /* WPPhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2E87B1C2ABD9200F8481D /* WPPhotoCell.swift */; };
+		75E2E87E1C2ACA4F00F8481D /* WPPhotoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E2E87D1C2ACA4F00F8481D /* WPPhotoDetailViewController.swift */; };
+		B68A4C5AF34974856DFF586F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EFFE1F895BE4B0A42084CF9 /* Pods.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		754A5D6E1C2A90DA0000E8A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754A5D511C2A90DA0000E8A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754A5D581C2A90DA0000E8A0;
+			remoteInfo = WallpapaerDemoApp;
+		};
+		754A5D791C2A90DA0000E8A0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 754A5D511C2A90DA0000E8A0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 754A5D581C2A90DA0000E8A0;
+			remoteInfo = WallpapaerDemoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10170EEAC263286BC9DB0B37 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		473A7D1564B52B39774DA3F1 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		754A5D591C2A90DA0000E8A0 /* WallpapaerDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpapaerDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		754A5D5C1C2A90DA0000E8A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		754A5D611C2A90DA0000E8A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		754A5D631C2A90DA0000E8A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		754A5D661C2A90DA0000E8A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		754A5D681C2A90DA0000E8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754A5D6D1C2A90DA0000E8A0 /* WallpapaerDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpapaerDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		754A5D711C2A90DA0000E8A0 /* WallpapaerDemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpapaerDemoAppTests.swift; sourceTree = "<group>"; };
+		754A5D731C2A90DA0000E8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754A5D781C2A90DA0000E8A0 /* WallpapaerDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WallpapaerDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		754A5D7C1C2A90DA0000E8A0 /* WallpapaerDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WallpapaerDemoAppUITests.swift; sourceTree = "<group>"; };
+		754A5D7E1C2A90DA0000E8A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75E2E86B1C2A960D00F8481D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		75E2E86D1C2A984400F8481D /* WPMenuListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPMenuListViewController.swift; sourceTree = "<group>"; };
+		75E2E86F1C2A9D0400F8481D /* WPFlickrService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPFlickrService.swift; sourceTree = "<group>"; };
+		75E2E8711C2A9E5A00F8481D /* WPError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPError.swift; sourceTree = "<group>"; };
+		75E2E8731C2AA2C600F8481D /* Dictionary+WP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+WP.swift"; sourceTree = "<group>"; };
+		75E2E8751C2AA64600F8481D /* WPPhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPPhoto.swift; sourceTree = "<group>"; };
+		75E2E8771C2AA6FB00F8481D /* UIViewController+WP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+WP.swift"; sourceTree = "<group>"; };
+		75E2E8791C2AB55D00F8481D /* WPPhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPPhotosViewController.swift; sourceTree = "<group>"; };
+		75E2E87B1C2ABD9200F8481D /* WPPhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPPhotoCell.swift; sourceTree = "<group>"; };
+		75E2E87D1C2ACA4F00F8481D /* WPPhotoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WPPhotoDetailViewController.swift; sourceTree = "<group>"; };
+		9EFFE1F895BE4B0A42084CF9 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		754A5D561C2A90DA0000E8A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B68A4C5AF34974856DFF586F /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754A5D6A1C2A90DA0000E8A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754A5D751C2A90DA0000E8A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		74FE097385EFD86C5112F467 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				473A7D1564B52B39774DA3F1 /* Pods.debug.xcconfig */,
+				10170EEAC263286BC9DB0B37 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		754A5D501C2A90DA0000E8A0 = {
+			isa = PBXGroup;
+			children = (
+				754A5D5B1C2A90DA0000E8A0 /* WallpapaerDemoApp */,
+				754A5D701C2A90DA0000E8A0 /* WallpapaerDemoAppTests */,
+				754A5D7B1C2A90DA0000E8A0 /* WallpapaerDemoAppUITests */,
+				754A5D5A1C2A90DA0000E8A0 /* Products */,
+				74FE097385EFD86C5112F467 /* Pods */,
+				9D162AFFCF9F466B1ED6F132 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		754A5D5A1C2A90DA0000E8A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				754A5D591C2A90DA0000E8A0 /* WallpapaerDemoApp.app */,
+				754A5D6D1C2A90DA0000E8A0 /* WallpapaerDemoAppTests.xctest */,
+				754A5D781C2A90DA0000E8A0 /* WallpapaerDemoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		754A5D5B1C2A90DA0000E8A0 /* WallpapaerDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				754A5D5C1C2A90DA0000E8A0 /* AppDelegate.swift */,
+				754A5D601C2A90DA0000E8A0 /* Main.storyboard */,
+				754A5D651C2A90DA0000E8A0 /* LaunchScreen.storyboard */,
+				754A5D681C2A90DA0000E8A0 /* Info.plist */,
+				75E2E86B1C2A960D00F8481D /* Constants.swift */,
+				75E2E86D1C2A984400F8481D /* WPMenuListViewController.swift */,
+				75E2E86F1C2A9D0400F8481D /* WPFlickrService.swift */,
+				75E2E8711C2A9E5A00F8481D /* WPError.swift */,
+				75E2E8731C2AA2C600F8481D /* Dictionary+WP.swift */,
+				75E2E8751C2AA64600F8481D /* WPPhoto.swift */,
+				75E2E8771C2AA6FB00F8481D /* UIViewController+WP.swift */,
+				75E2E8791C2AB55D00F8481D /* WPPhotosViewController.swift */,
+				75E2E87B1C2ABD9200F8481D /* WPPhotoCell.swift */,
+				75E2E87D1C2ACA4F00F8481D /* WPPhotoDetailViewController.swift */,
+				754A5D631C2A90DA0000E8A0 /* Assets.xcassets */,
+			);
+			path = WallpapaerDemoApp;
+			sourceTree = "<group>";
+		};
+		754A5D701C2A90DA0000E8A0 /* WallpapaerDemoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				754A5D711C2A90DA0000E8A0 /* WallpapaerDemoAppTests.swift */,
+				754A5D731C2A90DA0000E8A0 /* Info.plist */,
+			);
+			path = WallpapaerDemoAppTests;
+			sourceTree = "<group>";
+		};
+		754A5D7B1C2A90DA0000E8A0 /* WallpapaerDemoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				754A5D7C1C2A90DA0000E8A0 /* WallpapaerDemoAppUITests.swift */,
+				754A5D7E1C2A90DA0000E8A0 /* Info.plist */,
+			);
+			path = WallpapaerDemoAppUITests;
+			sourceTree = "<group>";
+		};
+		9D162AFFCF9F466B1ED6F132 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EFFE1F895BE4B0A42084CF9 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		754A5D581C2A90DA0000E8A0 /* WallpapaerDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754A5D811C2A90DA0000E8A0 /* Build configuration list for PBXNativeTarget "WallpapaerDemoApp" */;
+			buildPhases = (
+				081D56092BE0D27DA273477B /* Check Pods Manifest.lock */,
+				754A5D551C2A90DA0000E8A0 /* Sources */,
+				754A5D561C2A90DA0000E8A0 /* Frameworks */,
+				754A5D571C2A90DA0000E8A0 /* Resources */,
+				151B2820426DF46B4311EF12 /* Embed Pods Frameworks */,
+				EDBF3A114B13B5620F722B48 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WallpapaerDemoApp;
+			productName = WallpapaerDemoApp;
+			productReference = 754A5D591C2A90DA0000E8A0 /* WallpapaerDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		754A5D6C1C2A90DA0000E8A0 /* WallpapaerDemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754A5D841C2A90DA0000E8A0 /* Build configuration list for PBXNativeTarget "WallpapaerDemoAppTests" */;
+			buildPhases = (
+				754A5D691C2A90DA0000E8A0 /* Sources */,
+				754A5D6A1C2A90DA0000E8A0 /* Frameworks */,
+				754A5D6B1C2A90DA0000E8A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				754A5D6F1C2A90DA0000E8A0 /* PBXTargetDependency */,
+			);
+			name = WallpapaerDemoAppTests;
+			productName = WallpapaerDemoAppTests;
+			productReference = 754A5D6D1C2A90DA0000E8A0 /* WallpapaerDemoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		754A5D771C2A90DA0000E8A0 /* WallpapaerDemoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 754A5D871C2A90DA0000E8A0 /* Build configuration list for PBXNativeTarget "WallpapaerDemoAppUITests" */;
+			buildPhases = (
+				754A5D741C2A90DA0000E8A0 /* Sources */,
+				754A5D751C2A90DA0000E8A0 /* Frameworks */,
+				754A5D761C2A90DA0000E8A0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				754A5D7A1C2A90DA0000E8A0 /* PBXTargetDependency */,
+			);
+			name = WallpapaerDemoAppUITests;
+			productName = WallpapaerDemoAppUITests;
+			productReference = 754A5D781C2A90DA0000E8A0 /* WallpapaerDemoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		754A5D511C2A90DA0000E8A0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = CodeKamp;
+				TargetAttributes = {
+					754A5D581C2A90DA0000E8A0 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					754A5D6C1C2A90DA0000E8A0 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 754A5D581C2A90DA0000E8A0;
+					};
+					754A5D771C2A90DA0000E8A0 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 754A5D581C2A90DA0000E8A0;
+					};
+				};
+			};
+			buildConfigurationList = 754A5D541C2A90DA0000E8A0 /* Build configuration list for PBXProject "WallpapaerDemoApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 754A5D501C2A90DA0000E8A0;
+			productRefGroup = 754A5D5A1C2A90DA0000E8A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				754A5D581C2A90DA0000E8A0 /* WallpapaerDemoApp */,
+				754A5D6C1C2A90DA0000E8A0 /* WallpapaerDemoAppTests */,
+				754A5D771C2A90DA0000E8A0 /* WallpapaerDemoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		754A5D571C2A90DA0000E8A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754A5D671C2A90DA0000E8A0 /* LaunchScreen.storyboard in Resources */,
+				754A5D641C2A90DA0000E8A0 /* Assets.xcassets in Resources */,
+				754A5D621C2A90DA0000E8A0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754A5D6B1C2A90DA0000E8A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754A5D761C2A90DA0000E8A0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		081D56092BE0D27DA273477B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		151B2820426DF46B4311EF12 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EDBF3A114B13B5620F722B48 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		754A5D551C2A90DA0000E8A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75E2E8741C2AA2C600F8481D /* Dictionary+WP.swift in Sources */,
+				75E2E87C1C2ABD9200F8481D /* WPPhotoCell.swift in Sources */,
+				75E2E8761C2AA64600F8481D /* WPPhoto.swift in Sources */,
+				75E2E87E1C2ACA4F00F8481D /* WPPhotoDetailViewController.swift in Sources */,
+				754A5D5D1C2A90DA0000E8A0 /* AppDelegate.swift in Sources */,
+				75E2E8781C2AA6FB00F8481D /* UIViewController+WP.swift in Sources */,
+				75E2E87A1C2AB55D00F8481D /* WPPhotosViewController.swift in Sources */,
+				75E2E86C1C2A960D00F8481D /* Constants.swift in Sources */,
+				75E2E8721C2A9E5A00F8481D /* WPError.swift in Sources */,
+				75E2E8701C2A9D0400F8481D /* WPFlickrService.swift in Sources */,
+				75E2E86E1C2A984400F8481D /* WPMenuListViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754A5D691C2A90DA0000E8A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754A5D721C2A90DA0000E8A0 /* WallpapaerDemoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		754A5D741C2A90DA0000E8A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				754A5D7D1C2A90DA0000E8A0 /* WallpapaerDemoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		754A5D6F1C2A90DA0000E8A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754A5D581C2A90DA0000E8A0 /* WallpapaerDemoApp */;
+			targetProxy = 754A5D6E1C2A90DA0000E8A0 /* PBXContainerItemProxy */;
+		};
+		754A5D7A1C2A90DA0000E8A0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 754A5D581C2A90DA0000E8A0 /* WallpapaerDemoApp */;
+			targetProxy = 754A5D791C2A90DA0000E8A0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		754A5D601C2A90DA0000E8A0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				754A5D611C2A90DA0000E8A0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		754A5D651C2A90DA0000E8A0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				754A5D661C2A90DA0000E8A0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		754A5D7F1C2A90DA0000E8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		754A5D801C2A90DA0000E8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		754A5D821C2A90DA0000E8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 473A7D1564B52B39774DA3F1 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WallpapaerDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.codekamp.WallpapaerDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		754A5D831C2A90DA0000E8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10170EEAC263286BC9DB0B37 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WallpapaerDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.codekamp.WallpapaerDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		754A5D851C2A90DA0000E8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WallpapaerDemoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.codekamp.WallpapaerDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallpapaerDemoApp.app/WallpapaerDemoApp";
+			};
+			name = Debug;
+		};
+		754A5D861C2A90DA0000E8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WallpapaerDemoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.codekamp.WallpapaerDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WallpapaerDemoApp.app/WallpapaerDemoApp";
+			};
+			name = Release;
+		};
+		754A5D881C2A90DA0000E8A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WallpapaerDemoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.codekamp.WallpapaerDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WallpapaerDemoApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		754A5D891C2A90DA0000E8A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = WallpapaerDemoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = in.codekamp.WallpapaerDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WallpapaerDemoApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		754A5D541C2A90DA0000E8A0 /* Build configuration list for PBXProject "WallpapaerDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754A5D7F1C2A90DA0000E8A0 /* Debug */,
+				754A5D801C2A90DA0000E8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754A5D811C2A90DA0000E8A0 /* Build configuration list for PBXNativeTarget "WallpapaerDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754A5D821C2A90DA0000E8A0 /* Debug */,
+				754A5D831C2A90DA0000E8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754A5D841C2A90DA0000E8A0 /* Build configuration list for PBXNativeTarget "WallpapaerDemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754A5D851C2A90DA0000E8A0 /* Debug */,
+				754A5D861C2A90DA0000E8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		754A5D871C2A90DA0000E8A0 /* Build configuration list for PBXNativeTarget "WallpapaerDemoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				754A5D881C2A90DA0000E8A0 /* Debug */,
+				754A5D891C2A90DA0000E8A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 754A5D511C2A90DA0000E8A0 /* Project object */;
+}
