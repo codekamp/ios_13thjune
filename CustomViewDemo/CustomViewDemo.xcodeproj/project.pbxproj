@@ -13,6 +13,8 @@
 		752E8C341D2FB1B800F3BE35 /* CustomViewDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 752E8C321D2FB1B800F3BE35 /* CustomViewDemo.xcdatamodeld */; };
 		752E8C361D2FB1B800F3BE35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 752E8C351D2FB1B800F3BE35 /* Assets.xcassets */; };
 		752E8C391D2FB1B800F3BE35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 752E8C371D2FB1B800F3BE35 /* LaunchScreen.storyboard */; };
+		752E8C411D2FB24A00F3BE35 /* ThreeImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 752E8C401D2FB24A00F3BE35 /* ThreeImageView.xib */; };
+		752E8C431D2FB2A000F3BE35 /* ThreeImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 752E8C421D2FB2A000F3BE35 /* ThreeImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		752E8C351D2FB1B800F3BE35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		752E8C381D2FB1B800F3BE35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		752E8C3A1D2FB1B800F3BE35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		752E8C401D2FB24A00F3BE35 /* ThreeImageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ThreeImageView.xib; sourceTree = "<group>"; };
+		752E8C421D2FB2A000F3BE35 /* ThreeImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThreeImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				752E8C371D2FB1B800F3BE35 /* LaunchScreen.storyboard */,
 				752E8C3A1D2FB1B800F3BE35 /* Info.plist */,
 				752E8C321D2FB1B800F3BE35 /* CustomViewDemo.xcdatamodeld */,
+				752E8C401D2FB24A00F3BE35 /* ThreeImageView.xib */,
+				752E8C421D2FB2A000F3BE35 /* ThreeImageView.swift */,
 			);
 			path = CustomViewDemo;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				752E8C391D2FB1B800F3BE35 /* LaunchScreen.storyboard in Resources */,
+				752E8C411D2FB24A00F3BE35 /* ThreeImageView.xib in Resources */,
 				752E8C361D2FB1B800F3BE35 /* Assets.xcassets in Resources */,
 				752E8C311D2FB1B800F3BE35 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				752E8C2E1D2FB1B800F3BE35 /* ViewController.swift in Sources */,
+				752E8C431D2FB2A000F3BE35 /* ThreeImageView.swift in Sources */,
 				752E8C2C1D2FB1B800F3BE35 /* AppDelegate.swift in Sources */,
 				752E8C341D2FB1B800F3BE35 /* CustomViewDemo.xcdatamodeld in Sources */,
 			);

@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var threeImageView: ThreeImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let image = UIImage(named: "Image1")
+        threeImageView.imageViewOne.image = image
+        threeImageView.imageViewTwo.image = UIImage(named: "Image2")
+        threeImageView.imageViewThree.image = UIImage(named: "Image3")
     }
 
     override func didReceiveMemoryWarning() {
