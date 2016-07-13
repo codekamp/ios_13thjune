@@ -10,15 +10,27 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     let locationManager = CLLocationManager()
 
+    @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         locationManager.delegate = self
+        
+        mapView.delegate = self
+        
+        let coordinate = CLLocationCoordinate2D(latitude: 28.633811, longitude: 77.4439844)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = coordinate
+        annotation.title = "ABES Engg. College"
+        annotation.subtitle = "A random subtitle"
+        mapView.addAnnotation(annotation)
+        
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -56,20 +68,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         } else if status == CLAuthorizationStatus.AuthorizedAlways || status == CLAuthorizationStatus.AuthorizedWhenInUse {
             print("we are listening for updates")
             
-            locationManager.desiredAccuracy = 200.0
             
-            let coordinate = CLLocationCoordinate2D(latitude: 51.50998, longitude: -0.1337)
-            
-            let region = CLCircularRegion(center: coordinate, radius: 5000.0, identifier: "Lodon")
-            
-            locationManager.startMonitoringForRegion(region)
             locationManager.startUpdatingLocation()
             
-//            let coordinate1 = CLLocationCoordinate2D(latitude: 51.50998, longitude: -0.1337)
-//            
-//            let region1 = CLCircularRegion(center: coordinate1, radius: 10.0, identifier: "Lodon")
-//            
-//            locationManager.startMonitoringForRegion(region1)
+            
         }
     }
 
@@ -92,6 +94,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         print(error.localizedFailureReason)
     }
+    
+    func mapViewDidFinishRenderingMap(mapView: MKMapView, fullyRendered: Bool) {
+        let coordinate = CLLocationCoordinate2D(latitude: 28.633811, longitude: 77.4439844)
+        mapView.setRegion(MKCoordinateRegionMakeWithDistance(coordinate, 5000.0, 5000.0), animated: true)
+    }
+    
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        var reusableView = mapView.dequeueReusableAnnotationViewWithIdentifier("hello")
+        
+        if reusableView == nil {
+            reusableView = MKAnnotationView(annotation: annotation, reuseIdentifier: "hello")
+        }
+        
+        reusableView!.image = UIImage(named: "Car")
+        reusableView!.enabled = true
+        reusableView!.canShowCallout = true
+        
+        return reusableView
+    }
+    
+    //
 
 }
 

@@ -12,13 +12,14 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     var lists = [List]()
     
+    
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.tableView.dataSource = self
-        
         
         MailChimpService.fetchLists({
             incomingLists in
@@ -32,12 +33,7 @@ class ViewController: UIViewController, UITableViewDataSource {
             print(error.statusCode)
             print(error.code)
         }
-        
-        MailChimpService.fetchImage("https://s.yimg.com/uy/build/images/sohp/photo-stack2.png") { (image) in
-            self.imageView.image = image
-        }
-        
-        imageView.codeKampfunctin()
+
         
     }
     
@@ -47,12 +43,28 @@ class ViewController: UIViewController, UITableViewDataSource {
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
+        let row   = indexPath.row
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("simple_cell")!
         let list = lists[indexPath.row]
         
         cell.textLabel?.text = list.name
         
+        cell.tag = indexPath.row
+        
+        let image = MailChimpService.fetchImage("https://s.yimg.com/uy/build/images/sohp/photo-stack2.png", success: {
+            image in
+            
+            print(row)
+        })
+        
         return cell
+    }
+    
+    
+    func oneMoreFunction() -> (key1:Int, key2:Int, key3:String) {
+        
+        return (10, 20, "Hello")
     }
     
     

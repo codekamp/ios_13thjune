@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  LocationDemo
+//  CoreMotionDemo
 //
-//  Created by Cerebro on 11/07/16.
+//  Created by Cerebro on 13/07/16.
 //  Copyright © 2016 CodeKamp. All rights reserved.
 //
 
@@ -16,9 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        application.registerForRemoteNotifications()
-        
+        // Override point for customization after application launch.
         return true
     }
 
@@ -49,14 +47,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     // MARK: - Core Data stack
 
     lazy var applicationDocumentsDirectory: NSURL = {
-        // The directory the application uses to store the Core Data store file. This code uses a directory named "in.codekamp.LocationDemo" in the application's documents Application Support directory.
+        // The directory the application uses to store the Core Data store file. This code uses a directory named "in.codekamp.CoreMotionDemo" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
         return urls[urls.count-1]
     }()
 
     lazy var managedObjectModel: NSManagedObjectModel = {
         // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
-        let modelURL = NSBundle.mainBundle().URLForResource("LocationDemo", withExtension: "momd")!
+        let modelURL = NSBundle.mainBundle().URLForResource("CoreMotionDemo", withExtension: "momd")!
         return NSManagedObjectModel(contentsOfURL: modelURL)!
     }()
 
@@ -92,14 +90,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         managedObjectContext.persistentStoreCoordinator = coordinator
         return managedObjectContext
     }()
-    
-    func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-        
-    }
-    
-    func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
-        
-    }
 
     // MARK: - Core Data Saving support
 

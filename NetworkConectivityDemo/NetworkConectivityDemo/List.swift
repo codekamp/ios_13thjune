@@ -17,9 +17,4 @@ class List {
         self.id = json["id"].string!
         self.name = json["name"].string!
     }
-    
-    init(id:String, name:String) {
-        self.id = id
-        self.name = name
-    }
 }

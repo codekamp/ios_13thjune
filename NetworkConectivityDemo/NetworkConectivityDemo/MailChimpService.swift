@@ -13,7 +13,7 @@ import SwiftyJSON
 class MailChimpService {
     
     static let baseUrl = "https://us11.api.mailchimp.com/2.0/";
-    static let apiKey = "bce3acd01bc77d3ce0c840258b354172-us11"
+    static let apiKey = "dc00610cdef48bd9d76a5f83e4e90415-us11"
     
     class func fetchLists(completionHandler: [List] -> Void, failure:CodeKampError -> Void) {
         
@@ -35,8 +35,8 @@ class MailChimpService {
             
             var fetchedLists = [List]()
             
+            
             for subJson in json["data"].array! {
-                print(subJson["id"])
                 fetchedLists.append(List(json: subJson))
             }
             
@@ -94,5 +94,9 @@ class MailChimpService {
             success(image!)
         }
     }
+    
+    class func logout() {
+        // delete access token from NSUserDefaults
+            }
     
 }
