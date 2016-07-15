@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Yu0-0V-Ku0">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Second View Controller-->
+        <scene sceneID="S7E-mn-bpT">
+            <objects>
+                <viewController id="Yu0-0V-Ku0" customClass="SecondViewController" customModule="CameraAndEmailDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TSX-dH-KCs"/>
+                        <viewControllerLayoutGuide type="bottom" id="ULJ-Wh-RWl"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wcJ-Uv-YiH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eX7-IV-Flx">
+                                <rect key="frame" x="20" y="58" width="560" height="522"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="embed" id="Egh-Ff-mXH"/>
+                                </connections>
+                            </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ut5-8d-Ea4">
+                                <rect key="frame" x="275" y="20" width="51" height="30"/>
+                                <state key="normal" title="choose"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42463522315176139" green="0.49591140552925483" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="eX7-IV-Flx" firstAttribute="leading" secondItem="wcJ-Uv-YiH" secondAttribute="leadingMargin" id="3Hp-6j-vx5"/>
+                            <constraint firstItem="eX7-IV-Flx" firstAttribute="top" secondItem="Ut5-8d-Ea4" secondAttribute="bottom" constant="8" symbolic="YES" id="BSe-o0-jTl"/>
+                            <constraint firstItem="Ut5-8d-Ea4" firstAttribute="top" secondItem="TSX-dH-KCs" secondAttribute="bottom" id="Exo-nx-Wle"/>
+                            <constraint firstItem="Ut5-8d-Ea4" firstAttribute="centerX" secondItem="eX7-IV-Flx" secondAttribute="centerX" id="Stt-Do-a9z"/>
+                            <constraint firstAttribute="bottom" secondItem="eX7-IV-Flx" secondAttribute="bottom" constant="20" symbolic="YES" id="XG2-Dl-y0V"/>
+                            <constraint firstItem="eX7-IV-Flx" firstAttribute="trailing" secondItem="wcJ-Uv-YiH" secondAttribute="trailingMargin" id="Xfp-Fz-Wal"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="eX7-IV-Flx" id="Zru-mf-avs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BiT-xs-F6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413" y="-151"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CameraAndEmailDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="560" height="522"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wO8-QG-W0g">
+                                <rect key="frame" x="20" y="28" width="95" height="30"/>
+                                <state key="normal" title="Open Camera"/>
+                                <connections>
+                                    <action selector="openCamera" destination="BYZ-38-t0r" eventType="touchUpInside" id="lsN-S5-RWF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aVU-HE-Vju">
+                                <rect key="frame" x="20" y="85" width="134" height="30"/>
+                                <state key="normal" title="Open Photo Library"/>
+                                <connections>
+                                    <action selector="openPhotoLibrary" destination="BYZ-38-t0r" eventType="touchUpInside" id="ng8-UC-1Hz"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0OJ-ju-ZG2">
+                                <rect key="frame" x="20" y="148" width="240" height="194"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8K-B9-yfn">
+                                <rect key="frame" x="29" y="370" width="76" height="30"/>
+                                <state key="normal" title="Send email"/>
+                                <connections>
+                                    <action selector="sendEmail" destination="BYZ-38-t0r" eventType="touchUpInside" id="iRK-d5-9Vy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.49295075056613258" blue="0.38166726871116652" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="0OJ-ju-ZG2" id="PTB-3z-fin"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1277" y="-112"/>
+        </scene>
+    </scenes>
+</document>
